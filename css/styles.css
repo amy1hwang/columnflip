@@ -104,7 +104,6 @@ img {
   .box {
     float: left;
     width: 30%;
-    /*margin-right: 2%*/
   }
 
   .box:first-of-type {
@@ -127,8 +126,46 @@ img {
   }
 }
 
+
 @media screen and (min-width: 1000px) {
 
+  .box {
+    float: none;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .box:last-of-type {
+    margin-left: 0;
+  }
+
+  .box, .box3, .box2 {
+    height: 30%;
+    padding: 10px;
+  }
+
+  .column1, .column2, .column3 {
+    float: left;
+    width: 30%;
+    margin: 1.6%;
+    height: 75vh;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 616px) {
+  .textRight {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+  .boxImage {
+    width: 5.5vw;
+    height: 5.5vw;
+  }
+  .textRight {
+    font-size: 1.5vw;
+  }
 }
 
 
